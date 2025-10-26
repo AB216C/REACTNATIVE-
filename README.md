@@ -22,3 +22,12 @@ There is no CSS
 <TextInput/>
 and many more
 
+
+# When you have Iphone only, not Android, 
+- It is better to have a simulator to help our in this situation
+
+1. DOWNLOAD ANDROID studio, on macos or anroid
+<!-- 2. OR DOWNLOAD XCODE FOR MacOS only -->
+3. create a new device
+4. Run the application
+5. Press "A" to connect to android studio 
