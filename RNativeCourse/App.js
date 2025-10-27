@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* inline styling */}
-      <Text style={{ margin:20, borderWidth:2, borderColor:'red', padding:20}} > Hello Word</Text>
+      <Text style={{ margin:20, borderWidth:2, borderColor:'red', padding:20}}> Hello Word</Text>
       <View>
         {/* using stylesheet object */}
         <Text style={styles.text}>Another piece of Text</Text>
@@ -13,6 +13,7 @@ export default function App() {
     
       <View style={styles.buttonContainer}>
           <Button  title="Tap here"/>
+          <Button title="Tab There"/>
       </View>
     </View>
   );

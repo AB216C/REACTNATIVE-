@@ -31,3 +31,9 @@ and many more
 3. create a new device
 4. Run the application
 5. Press "A" to connect to android studio 
+
+# WHEN SIMULATOR NOT WORKING, START YOUR APPLICATION AS FOLLOWS:
+
+npx expo start --clear instead of npx expo start
+
+
