@@ -1,21 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button,ScrollView} from 'react-native';
+import GoalList from './goals.js';
+import Flex from './flex.js';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* inline styling */}
-      <Text style={{ margin:20, borderWidth:2, borderColor:'red', padding:20}}> Hello Word</Text>
-      <View>
-        {/* using stylesheet object */}
-        <Text style={styles.text}>Another piece of Text</Text>
+    <ScrollView>
+      <View style={styles.container}>
+        {/* inline styling */}
+        <Text style={{ margin:20, borderWidth:2, borderColor:'red', padding:20}}> Hello Word</Text>
+        <View>
+          {/* using stylesheet object */}
+          <Text style={styles.text}>Another piece of Text</Text>
+        </View>
+        <View style={styles.buttonContainer}>
+            <Button  title="Tap here"/>
+            <Button title="Tab There"/>
+        </View>
+        <GoalList/>
+        <Flex/>
       </View>
-    
-      <View style={styles.buttonContainer}>
-          <Button  title="Tap here"/>
-          <Button title="Tab There"/>
-      </View>
-    </View>
+    </ScrollView>
+
   );
 }
 

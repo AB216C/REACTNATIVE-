@@ -6,7 +6,6 @@ cd projectname
 
 npx expo start
 
-
 # REACT NATIVE
 
 There is no CSS
@@ -37,3 +36,5 @@ and many more
 npx expo start --clear instead of npx expo start
 
 
+Applying flex:1, means, a container is going to adjust accordingly and take the remaining space!
+while flex:2, or 3 will take more space compared to the first one.
