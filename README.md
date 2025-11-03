@@ -1,6 +1,6 @@
 # TO CREATE NEW PROJECT:
 
-npx create-expo-app --template blank RNativeCourse
+npx create-expo-app --template blank HandleEvents
 
 cd projectname
 
