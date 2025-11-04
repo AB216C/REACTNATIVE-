@@ -1,5 +1,5 @@
 
-import { StyleSheet, Button, Text, TextInput, View } from "react-native"
+import { StyleSheet, Button, Text, TextInput, View, ScrollView } from "react-native"
 import React, { useState } from 'react'
 
 export default function GoalList(){
@@ -25,10 +25,19 @@ export default function GoalList(){
                 <Button title="Add goal" onPress={addGoalHandler}/>
             </View>
 
+
             <View style={styles.goalsContainer}>
-                <Text>List of goals...</Text>
-                {courseGoals.map((goal)=><Text key={goal} style={styles.goalText} >{goal}</Text>)}
+                <ScrollView AlwaysBounceVertical={false}>
+                    {courseGoals.map((goal,index)=>(
+                        <View key={index} style={styles.goalItem}>
+                            <Text style={styles.goalText}>{goal}</Text>
+                        </View>
+                    ))}
+
+                </ScrollView>
             </View>
+
+
         </View>
     )
 }
@@ -71,12 +80,14 @@ const styles = StyleSheet.create({
         marginTop: 25
     },
 
-    goalText: {
+    goalItem:{
         backgroundColor:'rgba(46, 11, 99, 0.87)',
         padding:8,
         margin:8,
+    },
+
+    goalText: {
         color:'white'
-        
     }
 
 })
